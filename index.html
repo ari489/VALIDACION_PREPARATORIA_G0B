@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación Oficial — Título Electrónico</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background: #fff; color: #333; line-height: 1.8; }
+        .header { background: #fff; border-bottom: 3px solid #8B0000; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .header-left { display: flex; align-items: center; gap: 12px; }
+        .header-left .titulo { font-weight:bold; color:#8B0000; font-size:22px; }
+        .header-text { line-height: 1.2; }
+        .header-text span { display: block; font-size: 13px; color: #333; font-weight: 600; }
+        .header-right input { padding: 8px 15px; border: 1px solid #8B0000; border-radius: 3px 0 0 3px; width: 200px; font-size: 14px; }
+        .header-right button { padding: 8px 12px; background: #8B0000; color: #fff; border: none; cursor: pointer; border-radius: 0 3px 3px 0; }
+        .container { max-width: 900px; margin: 30px auto; padding: 0 25px; }
+        h1 { color: #8B0000; font-size: 32px; margin-bottom: 25px; font-weight: 700; }
+        .status-box { background: #f0f9e8; border: 1px solid #4CAF50; color: #2E7D32; padding: 12px 20px; border-radius: 4px; font-size: 16px; font-weight: 600; margin-bottom: 35px; display: flex; align-items: center; gap: 10px; }
+        .status-box::before { content: '✓'; font-size: 22px; font-weight: bold; }
+        .validation-section { display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 40px; }
+        .data-card { flex: 2; min-width: 320px; background: #f9f9f9; border: 1px solid #ddd; border-radius: 6px; padding: 25px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+        .qr-card { flex: 1; min-width: 200px; background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+        .qr-card h3 { color: #8B0000; margin-bottom: 15px; font-size: 16px; }
+        .qr-placeholder { width: 160px; height: 160px; margin: 0 auto; background: #f0f0f0; border: 2px dashed #999; display: flex; align-items: center; justify-content: center; color: #666; font-size: 13px; }
+        .field { margin-bottom: 16px; }
+        .field label { display: block; font-size: 13px; color: #666; font-weight: 600; text-transform: uppercase; margin-bottom: 4px; }
+        .field span { font-size: 15px; color: #222; font-weight: 500; padding-left: 5px; }
+        .divider { height: 1px; background: #ddd; margin: 20px 0; }
+        .datetime { text-align: right; font-size: 14px; color: #555; margin-top: 15px; font-style: italic; }
+        .no-expire { color: #2E7D32; font-weight: 600; font-size: 14px; margin-top: 10px; display: inline-block; }
+        footer { background: #666; color: #fff; padding: 35px 25px; margin-top: 60px; }
+        .footer-top { background: #8B0000; padding: 20px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 25px; }
+        .footer-logo { text-align: center; color: #fff; }
+        .footer-logo .puebla { font-size:28px; font-weight:bold; }
+        .footer-links { color: #fff; line-height: 1.8; font-size: 14px; }
+        .footer-bottom { background: #444; color: #ccc; padding: 15px 40px; font-size: 13px; text-align: center; margin-top: 1px; }
+        @media (max-width: 768px) {
+            .header { flex-direction: column; gap: 15px; text-align: center; }
+            .validation-section { flex-direction: column; }
+            .footer-top { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="header-left">
+        <div class="titulo">PUEBLA</div>
+        <div class="header-text">
+            <span>Pensar en Grande</span>
+            <span><strong>AMOR</strong> por PUEBLA</span>
+        </div>
+    </div>
+    <div class="header-right">
+        <input type="text" placeholder="Buscar...">
+        <button>🔍</button>
+    </div>
+</div>
+<div class="container">
+    <h1>Verificar Título Electrónico</h1>
+    <div class="status-box">TÍTULO VÁLIDO Y VIGENTE — SIN CADUCIDAD</div>
+    <div class="validation-section">
+        <div class="data-card">
+            <h3 style="color:#8B0000; margin-bottom:20px; border-bottom:2px solid #8B0000; padding-bottom:8px;">📋 Datos del Certificado</h3>
+            <div class="field">
+                <label>Nombre Completo</label>
+                <span>MARIA ANA LILIA ROJAS DIAZ</span>
+            </div>
+            <div class="field">
+                <label>CURP</label>
+                <span>RODA760522MPLJZN02</span>
+            </div>
+            <div class="field">
+                <label>Matrícula / Número de Control</label>
+                <span>130801104112</span>
+            </div>
+            <div class="field">
+                <label>Institución Educativa</label>
+                <span>PREPARATORIA ABIERTA SEP</span>
+            </div>
+            <div class="field">
+                <label>Clave de Centro de Trabajo</label>
+                <span>30PBH3148Z</span>
+            </div>
+            <div class="field">
+                <label>RVOE</label>
+                <span>900852</span>
+            </div>
+            <div class="field">
+                <label>Periodo de Estudios</label>
+                <span>16 DE AGOSTO DEL 2016 AL 11 DE JULIO DEL 2018</span>
+            </div>
+            <div class="field">
+                <label>Créditos / Promedio</label>
+                <span>287 Créditos — Promedio: 8.5 (Ocho punto cinco)</span>
+            </div>
+            <div class="field">
+                <label>Autoridad Educativa</label>
+                <span>María de los Ángeles Cortés Basurto — Directora General</span>
+            </div>
+            <div class="field">
+                <label>Folio Certificado</label>
+                <span>00001000000409629935</span>
+            </div>
+            <div class="divider"></div>
+            <div class="field">
+                <label>Fecha de Emisión Original</label>
+                <span>11 de Julio de 2018 — 17:21:18 hrs</span>
+            </div>
+            <div class="datetime" id="current-datetime"></div>
+            <div class="no-expire">🔒 DOCUMENTO SIN CADUCIDAD</div>
+        </div>
+        <div class="qr-card">
+            <h3>📱 Código QR de Validación</h3>
+            <div class="qr-placeholder">
+                QR de Validación<br>
+                <small>(Escanea para verificar)</small>
+            </div>
+            <p style="font-size:12px; color:#666; margin-top:12px;">Escanea para confirmar validez<br>Documento oficial — Sin caducidad</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-top">
+        <div class="footer-logo">
+            <div class="puebla">Puebla</div>
+        </div>
+        <div class="footer-links">
+            <strong>TE RECOMENDAMOS</strong><br>
+            ■ Transparencia Fiscal<br>
+            ■ Presupuesto Ciudadano<br>
+            ■ Portal de Empleo<br>
+            ■ Presidencia de la República<br>
+            ■ Ley General de Contabilidad Gubernamental
+        </div>
+        <div style="display:flex; gap:15px; align-items:center;">
+            <span>Tramitapue</span>
+            <span>Infomex</span>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        Planta Baja del Centro Integral de Servicios y Atención Ciudadana, Reserva Territorial Atlixcáyotl de Puebla, Pue.<br>
+        Dirección de Profesiones de la Secretaría de Educación del Estado de Puebla. Aviso de Privacidad Integral
+    </div>
+</footer>
+<script>
+    function updateDateTime() {
+        const now = new Date();
+        const fecha = now.toLocaleDateString('es-MX', {
+            day: '2-digit', month: 'long', year: 'numeric'
+        });
+        const hora = now.toLocaleTimeString('es-MX', {
+            hour: '2-digit', minute: '2-digit', second: '2-digit'
+        });
+        document.getElementById('current-datetime').innerHTML = 
+            `<strong>Fecha y hora de consulta:</strong> ${fecha} — ${hora} hrs`;
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+</script>
+</body>
+</html>
+pagina de Validación oficial 
